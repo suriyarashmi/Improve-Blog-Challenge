@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SimpleBlog.API.Infrastructure;
 
 namespace SimpleBlog.API
 {
@@ -25,7 +26,13 @@ namespace SimpleBlog.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IPostsRepository, PostsRepository>();
+            services.AddTransient<ICommentsRepository, CommentsRepository>();
+            services.AddHttpClient<IWebClient, WebClient>();
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSwaggerDocumentation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,8 +47,19 @@ namespace SimpleBlog.API
                 app.UseHsts();
             }
 
+            app.UseSwaggerDocumentation();
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Posts}/{action=Index}/{id?}"
+                );
+                routes.MapRoute(
+                    name: "comments",
+                    template: "{controller=Comments}/{action=Get}/{postId?}"
+                );
+            });
         }
     }
 }
