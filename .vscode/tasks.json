@@ -12,12 +12,24 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build",
+            "label": "run api",
             "command": "dotnet",
-            "type": "process",
+            "type": "shell",
             "args": [
-                "build",
+                "run",
+                "--project",
                 "${workspaceFolder}/SimpleBlog.API/SimpleBlog.API.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run frontend",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/SimpleBlog.FrontEnd/SimpleBlog.FrontEnd.csproj"
             ],
             "problemMatcher": "$msCompile"
         },

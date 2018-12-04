@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SimpleBlog.FrontEnd.Infrastructure;
 
 namespace SimpleBlog.FrontEnd
 {
@@ -31,7 +32,10 @@ namespace SimpleBlog.FrontEnd
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddTransient<IPostsRepository, PostsRepository>();
+            services.AddTransient<ICommentsRepository, CommentsRepository>();
+            services.AddHttpClient<IWebClient, WebClient>();
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

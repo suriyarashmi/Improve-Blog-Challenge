@@ -4,40 +4,26 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SimpleBlog.FrontEnd.Infrastructure;
 using SimpleBlog.FrontEnd.Models;
 
 namespace SimpleBlog.FrontEnd.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        protected readonly IPostsRepository postsRepo;
+
+        public HomeController(IPostsRepository postsRepo) 
         {
-            return View();
+            this.postsRepo = postsRepo;
         }
-
-        public IActionResult About()
+        public async Task<IActionResult> Index()
         {
-            ViewData["Message"] = "Your application description page.";
+            var viewModel = await postsRepo.GetN<Post>(6);
+            ViewData["Model.Featured"] = viewModel.Take(3).ToList();
+            ViewData["Model.Boxes"] = viewModel.Skip(3).Take(3).ToList();
 
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();       
         }
     }
 }
