@@ -1,0 +1,17 @@
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\obj\Debug\netcoreapp2.1\SimpleBlog.API.Tests.csprojAssemblyReference.cache
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\obj\Debug\netcoreapp2.1\SimpleBlog.API.Tests.csproj.CoreCompileInputs.cache
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\obj\Debug\netcoreapp2.1\SimpleBlog.API.Tests.AssemblyInfoInputs.cache
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\obj\Debug\netcoreapp2.1\SimpleBlog.API.Tests.AssemblyInfo.cs
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\SimpleBlog.API.Tests.deps.json
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\SimpleBlog.API.Tests.runtimeconfig.json
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\SimpleBlog.API.Tests.runtimeconfig.dev.json
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\SimpleBlog.API.Tests.dll
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\SimpleBlog.API.Tests.pdb
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\SimpleBlog.API.dll
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\bin\Debug\netcoreapp2.1\SimpleBlog.API.pdb
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\obj\Debug\netcoreapp2.1\SimpleBlog.API.Tests.csproj.CopyComplete
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\obj\Debug\netcoreapp2.1\SimpleBlog.API.Tests.dll
+C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API.Tests\obj\Debug\netcoreapp2.1\SimpleBlog.API.Tests.pdb

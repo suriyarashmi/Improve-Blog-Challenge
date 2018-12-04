@@ -20,6 +20,25 @@
                 "${workspaceFolder}/SimpleBlog.API/SimpleBlog.API.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "shell",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "args": [
+                "test",
+                "${workspaceFolder}/SimpleBlog.API.Tests/SimpleBlog.API.Tests.csproj"
+            ],
+            "problemMatcher": "$msCompile"
         }
     ]
 }
