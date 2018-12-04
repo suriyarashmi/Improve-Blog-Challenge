@@ -27,6 +27,6 @@ namespace SimpleBlog.API.Models
         public string Body { get; set; }
 
         [JsonProperty("avatar")]
-        public string Avatar => "https://via.placeholder.com/50x50";
+        public string Avatar => "https://via.placeholder.com/100x100";
     }
 }

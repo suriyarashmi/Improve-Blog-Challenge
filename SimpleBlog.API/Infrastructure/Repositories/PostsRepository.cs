@@ -17,7 +17,8 @@ namespace SimpleBlog.API.Infrastructure
 
         public async Task<Post> Get<Post>(int id)
         {
-            throw new NotImplementedException();
+            var json = await _client.GetData($"/{id}");
+            return JsonConvert.DeserializeObject<Post>(json);
         }
 
         public async Task<IList<Post>> GetN<Post>(int count)

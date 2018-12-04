@@ -21,8 +21,16 @@ namespace SimpleBlog.API.Controllers
 
         // api/posts
         [HttpGet]
-        public async Task<ActionResult<string>> Get() {
+        public async Task<ActionResult<string>> Get() 
+        {
             return JsonConvert.SerializeObject(await _postsRepo.GetN<Post>(100));
+        }
+
+        // api/posts/1
+        [HttpGet("{id}")]
+        public async Task<ActionResult<string>> Get(int id) 
+        {
+            return JsonConvert.SerializeObject(await _postsRepo.Get<Post>(id));
         }
     }
 }
