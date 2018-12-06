@@ -17,9 +17,11 @@ The idea behind this task is to measure developers' capabilities to work to slig
 7. By default, both the API and FrontEnd are forcing HTTPS to be used for their respective applications. If you haven't had a similar project set up on your machine, you might need to run ```dotnet dev-certs https --trust``` in PowerShell. [See this link](https://www.hanselman.com/blog/CommentView.aspx?guid=80ff6163-d06b-43a2-b1b1-f75c4fefdb10)  for further reference.
 
 ## The tasks
-Please aim to complete as many tasks from the below. In case you have any observations regarding code quality (e.g. architectural improvements, recommendations, tech debt), please include these in a file titled ```observations.md``` and place it in the root of your solution. Should you have any impediments stopping you from completing any of these tasks, please include those in the same file.
+Please aim to complete as many tasks from the below list, but don't spend days on these items, they should be doable in the matter of an hour or two.
 
-1. Your first task is to reference posts by their title (or so-called *slug*). Currently all posts are referenced by their ID in the format of: /Posts/Details/{ID}. We'd like this optimised for SEO, and make the URLs a bit nicer. To do that, instead of the ID, we'll need to put a lower case, hyphenated version of the title (the slug). This also needs to be URL-friendly, so that any special characters are eliminated from it. Ideally, this needs to be stored as a new field in the Post object in the API.
+In case you have any observations regarding code quality (e.g. architectural improvements, recommendations, tech debt), please include these in a file titled ```observations.md``` and place it in the root of your solution. Should you have any impediments stopping you from completing any of these tasks, please include those in the same file.
+
+1. Your first task is to introduce the ability of referencing posts by their title (or so-called *slug*). Currently all posts are referenced by their ID in the format of: /Posts/Details/{ID}. We'd like this optimised for SEO, and make the URLs a bit nicer. To do that, instead of the ID, we'll need to put a lower case, hyphenated version of the title (the slug). This also needs to be URL-friendly, so that any special characters are eliminated from it. Ideally, this needs to be stored as a new field in the Post object in the API.
 
 2. Currently, the colour of the posts are randomly generated when the page is loaded. In order to improve this, we'd like to store these colours for each post in the API and reference those in the FrontEnd project instead of generating the colours in the FrontEnd when each page is loaded.
 
@@ -35,7 +37,7 @@ Please aim to complete as many tasks from the below. In case you have any observ
 
 ## Considerations
 
-1. Some of the instructions are intentionally left vague partly to make it look like a real-life request, partly so that you can apply your best knowledge. It's worth thinking about architectural considerations, potential areas for future improvement, tech debt and comments in the source code in general.
+1. Some of the instructions are intentionally left a bit vague partly to make them look like a real-life request, partly so that you can apply your best knowledge. It's worth thinking about architectural considerations, potential areas for future improvement, tech debt and generally adding comments in the source code.
 
 2. Before you write any code, think: is this the best way of going about fixing this issue?
    
@@ -45,6 +47,6 @@ Please aim to complete as many tasks from the below. In case you have any observ
 
 5. Do you need to provide documentation along with the changes you made?
 
-6. Are all settings stored in the correct place? Can they be moved to a central area?
+6. Are all settings stored in the correct place? Can they be moved out to a central area?
 
 7. Is the communication between the API and the FrontEnd good / secure enough?
