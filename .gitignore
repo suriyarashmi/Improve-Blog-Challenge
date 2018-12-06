@@ -335,3 +335,6 @@ tests/reports/
 
 # VsCode solution-explorer templates
 .vscode/solution-explorer/
+
+# Cache
+*.cache
