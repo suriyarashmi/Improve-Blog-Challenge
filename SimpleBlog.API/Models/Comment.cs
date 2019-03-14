@@ -17,7 +17,7 @@ namespace SimpleBlog.API.Models
         [JsonProperty("postId")]
         public int PostId { get; set; }
 
-        [JsonProperty("name")]
+        [JsonProperty("name")]  
         public string Name { get; set; }
 
         [JsonProperty("email")]
@@ -25,6 +25,10 @@ namespace SimpleBlog.API.Models
 
         [JsonProperty("body")]
         public string Body { get; set; }
+
+      [JsonProperty("commentsCount")]
+        public int CommentsCount { get; set; }
+
 
         [JsonProperty("avatar")]
         public string Avatar => "https://via.placeholder.com/100x100";

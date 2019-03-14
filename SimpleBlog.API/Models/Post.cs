@@ -14,6 +14,10 @@ namespace SimpleBlog.API.Models
         [JsonProperty("id")]
         public int Id { get; set; }
 
+        //Colour page
+        [JsonProperty("colour")]
+        public ColourGroup Colour{get; set;}
+
         [JsonProperty("title")]
         public string Title { get; set; }
 

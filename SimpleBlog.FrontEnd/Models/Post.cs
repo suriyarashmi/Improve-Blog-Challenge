@@ -14,6 +14,10 @@ namespace SimpleBlog.FrontEnd.Models
         [JsonProperty("body")]
         public string Body { get; set; }
 
+        //Colour page
+        [JsonProperty("colour")]
+        public ColourGroup Colour{get; set;}
+
         [JsonProperty("image")]
         public string Image { get; set; }
     }

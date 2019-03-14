@@ -20,6 +20,9 @@ namespace SimpleBlog.FrontEnd.Models
         [JsonProperty("body")]
         public string Body { get; set; }
 
+          [JsonProperty("commentsCount")]
+        public int CommentsCount { get; set; }
+
         [JsonProperty("avatar")]
         public string Avatar { get; set; }
     }

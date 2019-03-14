@@ -28,5 +28,7 @@ namespace SimpleBlog.API.Infrastructure
             var json = await _client.GetData(postId + "");
             return JsonConvert.DeserializeObject<List<Comment>>(json);
         }
+
+        
     }
 }

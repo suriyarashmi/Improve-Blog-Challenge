@@ -29,3 +29,5 @@ C:\Projects\Recruitment\Improve-Blog-Challenge\simpleblog.frontend\obj\Debug\net
 C:\Projects\Recruitment\Improve-Blog-Challenge\simpleblog.frontend\obj\Debug\netcoreapp2.1\SimpleBlog.FrontEnd.csproj.CopyComplete
 C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.FrontEnd\obj\Debug\netcoreapp2.1\Razor\Views\Posts\Index.g.cshtml.cs
 C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.FrontEnd\obj\Debug\netcoreapp2.1\Razor\Views\Posts\Details.g.cshtml.cs
+C:\Users\rashm\Documents\GitHub\Improve-Blog-Challenge\SimpleBlog.FrontEnd\obj\Debug\netcoreapp2.1\SimpleBlog.FrontEnd.dll
+C:\Users\rashm\Documents\GitHub\Improve-Blog-Challenge\SimpleBlog.FrontEnd\obj\Debug\netcoreapp2.1\SimpleBlog.FrontEnd.pdb

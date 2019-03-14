@@ -12,7 +12,7 @@ namespace SimpleBlog.FrontEnd.Controllers
 
         protected readonly IPostsRepository postsRepo;
         protected readonly ICommentsRepository commentsRepo;
-
+       
         public PostsController(IPostsRepository postsRepo, ICommentsRepository commentsRepo) 
         {
             this.postsRepo = postsRepo;
@@ -33,10 +33,12 @@ namespace SimpleBlog.FrontEnd.Controllers
         {
             var post = await postsRepo.Get<Post>(id);
             var comments = await commentsRepo.GetAll<Comment>(id);
+            var colourgroup= colourgroup[0];
             var vm = new PostDetailsViewModel 
             {
                 Post = post,
                 Comments = comments.ToList(),
+                ColourGroup=colourgroup,
             };
             return View(vm);
         }

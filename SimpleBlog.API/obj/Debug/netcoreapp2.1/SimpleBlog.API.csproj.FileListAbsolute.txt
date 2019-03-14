@@ -12,3 +12,5 @@ C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API\obj\Debug\netcorea
 C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API\obj\Debug\netcoreapp2.1\SimpleBlog.API.RazorTargetAssemblyInfo.cache
 C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API\obj\Debug\netcoreapp2.1\SimpleBlog.API.dll
 C:\Projects\Recruitment\Improve-Blog-Challenge\SimpleBlog.API\obj\Debug\netcoreapp2.1\SimpleBlog.API.pdb
+C:\Users\rashm\Documents\GitHub\Improve-Blog-Challenge\SimpleBlog.API\obj\Debug\netcoreapp2.1\SimpleBlog.API.dll
+C:\Users\rashm\Documents\GitHub\Improve-Blog-Challenge\SimpleBlog.API\obj\Debug\netcoreapp2.1\SimpleBlog.API.pdb

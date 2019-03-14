@@ -8,5 +8,13 @@ namespace SimpleBlog.FrontEnd.ViewModels
         public Post Post { get; set; }
 
         public List<Comment> Comments { get; set; }
+        public CommentsCount CommentsCount {get; set;}
+        public ColorGroup colourGroup{get;set;}
+        public PostDetailsViewModel(){
+            foreach (string Comment in Comments )
+{
+CommentsCount++;
+}
+}
     }
 }

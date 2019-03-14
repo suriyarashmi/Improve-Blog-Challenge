@@ -6,5 +6,11 @@ namespace SimpleBlog.FrontEnd.ViewModels
 {
     public class PostsViewModel {
         public List<Post> Posts { get; set; }
+
+        public PostsViewModel() {
+        var colour = new ColourGroup();
+
+        
+            }
     }
 }
